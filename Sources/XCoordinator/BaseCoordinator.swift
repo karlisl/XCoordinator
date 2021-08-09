@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOSApplicationExtension, unavailable)
 extension BaseCoordinator {
     /// Shortcut for `BaseCoordinator.TransitionType.RootViewController`
     public typealias RootViewController = TransitionType.RootViewController
@@ -20,6 +21,7 @@ extension BaseCoordinator {
 /// `NavigationCoordinator`, `TabBarCoordinator`, `ViewCoordinator`, `SplitCoordinator`
 /// and `PageCoordinator`.
 ///
+@available(iOSApplicationExtension, unavailable)
 open class BaseCoordinator<RouteType: Route, TransitionType: TransitionProtocol>: Coordinator {
 
     // MARK: Stored properties
@@ -160,6 +162,7 @@ extension UIViewController {
 
 // MARK: - Interactive Transitions
 
+@available(iOSApplicationExtension, unavailable)
 extension BaseCoordinator {
 
     // MARK: Registering

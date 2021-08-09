@@ -7,12 +7,15 @@
 //
 
 /// A BasicCoordinator with a `UINavigationController` as its rootViewController.
+@available(iOSApplicationExtension, unavailable)
 public typealias BasicNavigationCoordinator<R: Route> = BasicCoordinator<R, NavigationTransition>
 
 /// A BasicCoordinator with a `UIViewController` as its rootViewController.
+@available(iOSApplicationExtension, unavailable)
 public typealias BasicViewCoordinator<R: Route> = BasicCoordinator<R, ViewTransition>
 
 /// A BasicCoordinator with a `UITabBarController` as its rootViewController.
+@available(iOSApplicationExtension, unavailable)
 public typealias BasicTabBarCoordinator<R: Route> = BasicCoordinator<R, TabBarTransition>
 
 ///
@@ -21,6 +24,7 @@ public typealias BasicTabBarCoordinator<R: Route> = BasicCoordinator<R, TabBarTr
 /// Although subclassing of coordinators is encouraged for more complex cases, a `BasicCoordinator` can easily
 /// be created by only providing a `prepareTransition` closure, an `initialRoute` and an `initialLoadingType`.
 ///
+@available(iOSApplicationExtension, unavailable)
 open class BasicCoordinator<RouteType: Route, TransitionType: TransitionProtocol>: BaseCoordinator<RouteType, TransitionType> {
 
     // MARK: Nested types
